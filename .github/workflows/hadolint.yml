@@ -3,7 +3,8 @@ name: check
 on:
   pull_request:
     paths:
-    - Dockerfile
+      - Dockerfile
+      - .github/workflows/hadolint.yml
 
 jobs:
   hadolint:
