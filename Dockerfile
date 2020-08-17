@@ -1,4 +1,4 @@
-FROM python:3.5-slim-stretch
+FROM python:3.7-slim-stretch
 RUN apt-get update > /dev/null && apt-get install -y --no-install-recommends \
     build-essential=12.3 \
     curl=7.52.1-5+deb9u11 \
