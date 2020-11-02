@@ -1,6 +1,6 @@
 FROM python:3.9-slim-buster
 RUN apt-get update > /dev/null && apt-get install -y --no-install-recommends \
-    build-essential=12.3 \
+    build-essential=12.6 \
     curl=7.52.1-5+deb9u11 \
     file=1:5.30-1+deb9u3 \
     git=1:2.11.0-3+deb9u7 \
