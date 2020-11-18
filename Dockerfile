@@ -11,4 +11,3 @@ RUN apt-get update > /dev/null && apt-get install -y --no-install-recommends \
     swig=3.0.10-1.1 \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
-
