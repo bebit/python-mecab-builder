@@ -1,7 +1,7 @@
-FROM python:3.9-slim-buster
+FROM python:3.7-slim-stretch
 RUN apt-get update > /dev/null && apt-get install -y --no-install-recommends \
     build-essential=12.3 \
-    curl=7.52.1-5+deb9u11 \
+    curl=7.52.1-5+deb9u12 \
     file=1:5.30-1+deb9u3 \
     git=1:2.11.0-3+deb9u7 \
     default-libmysqlclient-dev=1.0.2 \
