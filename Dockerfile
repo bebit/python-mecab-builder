@@ -1,4 +1,4 @@
-FROM python:3.7-buster
+FROM python:3.7-slim-buster
 RUN apt-get update > /dev/null && apt-get install -y --no-install-recommends \
     build-essential=12.6 \
     curl=7.64.0-4+deb10u1 \
