@@ -4,6 +4,7 @@ on:
   pull_request:
     paths:
       - Dockerfile
+      - .github/workflows/build-and-push.yml
     types:
       - opened # default
       - synchronize # default
