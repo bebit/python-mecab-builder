@@ -5,13 +5,12 @@ RUN apt-get update > /dev/null && apt-get install -y --no-install-recommends \
     file=1:5.44-3 \
     git=1:2.39.2-1.1 \
     default-libmysqlclient-dev=1.1.0 \
-    #swig=4.1.0-0.2 \
+    swig=4.1.0-0.2 \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 FROM base as dictionary-builder
 RUN apt-get update > /dev/null && apt-get install -y --no-install-recommends \
     mecab=0.996-14+b14 \
-    #mecab-ipadic-utf8=2.7.0-20070801+main-3 \
     libmecab-dev=0.996-14+b14 \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
