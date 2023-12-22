@@ -4,8 +4,6 @@ RUN apt-get update > /dev/null && apt-get install -y --no-install-recommends \
     curl=7.88.1-10+deb12u4 \
     file=1:5.44-3 \
     git=1:2.39.2-1.1 \
-    default-libmysqlclient-dev=1.1.0 \
-    swig=4.1.0-0.2 \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 FROM base as dictionary-builder
