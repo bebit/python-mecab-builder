@@ -1,4 +1,4 @@
-FROM python:3.10-slim-buster
+FROM python:3.12-slim-bookworm
 RUN apt-get update > /dev/null && apt-get install -y --no-install-recommends \
     build-essential=12.6 \
     curl=7.64.0-4+deb10u5 \
