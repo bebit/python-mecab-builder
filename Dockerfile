@@ -11,3 +11,7 @@ RUN apt-get update > /dev/null && apt-get install -y --no-install-recommends \
     swig=3.0.12-2 \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
+
+FROM ghcr.io/bebit/python-mecab-builder:4.1 as builder
+RUN git clone --depth 1 https://github.com/neologd/mecab-ipadic-neologd.git && \
+    mecab-ipadic-neologd/bin/install-mecab-ipadic-neologd -y -n -p /var/lib/mecab/dic/mecab-ipadic-neologd
