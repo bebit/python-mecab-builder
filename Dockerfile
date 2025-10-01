@@ -1,7 +1,7 @@
 FROM python:3.12-slim-bookworm
 RUN apt-get update > /dev/null && apt-get install -y --no-install-recommends \
     build-essential=12.9 \
-    curl=7.88.1-10+deb12u12 \
+    curl=7.88.1-10+deb12u14 \
     file=1:5.44-3 \
     git=1:2.39.5-0+deb12u2 \
     default-libmysqlclient-dev=1.1.0 \
