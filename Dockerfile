@@ -9,5 +9,6 @@ RUN apt-get update > /dev/null && apt-get install -y --no-install-recommends \
     mecab-ipadic-utf8=2.7.0-20070801+main-3 \
     libmecab-dev=0.996-14+b14 \
     swig=4.1.0-0.2 \
+    && apt-get -y upgrade \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
